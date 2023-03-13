@@ -1,59 +1,31 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+
+
+	figure {
+		margin: 0 0 1em 0;
 	}
 
-	h1 {
+	img {
 		width: 100%;
+		max-width: 400px;
+		margin: 0 0 1em 0;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	p {
+		margin: 1em auto;
+		padding-bottom: 1em;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+	
 </style>
+
+<svelte:head>
+	<title>Editorial Jarilla</title>
+</svelte:head>
+
+
+<figure class=" xs:w-1/2 flex flex-wrap items-center justify-center">
+	<img alt='Editorial Jarilla' src='logo.svg'>
+</figure>
+<p class="link text-base font-serif italic md:text-lg"><a href="about"> “ Escritores trabajando para Escritores ”</a></p>
